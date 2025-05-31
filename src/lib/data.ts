@@ -1,6 +1,12 @@
 export const data: Record<string, DataPoint> = {
-	'Starfell Valley': { max: 102.1 },
-	'Galesong Hill': { max: 123.9 },
+	'Starfell Valley': {
+		max: 102.1,
+		notes: { default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off' }
+	},
+	'Galesong Hill': {
+		max: 123.9,
+		notes: { default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off' }
+	},
 	'Windwail Highland': {
 		max: (opts) => {
 			if (opts.v1_6_goldenApple) {
@@ -8,7 +14,10 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 109.1;
 		},
-		notes: { default: 'lol', v1_6_goldenApple: '+1 Chest from 1.6 Golden Apple Archipelago' }
+		notes: {
+			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
+			v1_6_goldenApple: '+1 Chest (+0,5%) from 1.6 Golden Apple Archipelago Event'
+		}
 	},
 	'Brightcrown Mountains': {
 		max: (opts) => {
@@ -17,7 +26,10 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 106.1;
 		},
-		notes: { v2_2_shadow: '+1 Chest from 2.2 Shadow of the Ancients' }
+		notes: {
+			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
+			v2_2_shadow: '+1 Chest (+0,5%) from 2.2 Shadow of the Ancients Event'
+		}
 	},
 	'Bishui Plain': {
 		max: (opts) => {
@@ -26,7 +38,10 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 105.7;
 		},
-		notes: { v1_3_laternRite: '+2 Chest from 1.3 Lantern Rite' }
+		notes: {
+			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
+			v1_3_laternRite: '+2 (+0,5%) Chest from 1.3 Lantern Rite Event'
+		}
 	},
 	Minlin: {
 		max: (opts) => {
@@ -35,7 +50,10 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 109.9;
 		},
-		notes: { v1_3_laternRite: '+3 Chest from 1.3 Lantern Rite' }
+		notes: {
+			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
+			v1_3_laternRite: '+3 Chest (+0,3%) from 1.3 Lantern Rite Event'
+		}
 	},
 	'Sea of Clouds': {
 		max: (opts) => {
@@ -44,7 +62,10 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 108;
 		},
-		notes: { v1_3_laternRite: '+2 Chests from 1.3 Lantern Rite' }
+		notes: {
+			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
+			v1_3_laternRite: '+2 Chests (+1,8%) from 1.3 Lantern Rite Event'
+		}
 	},
 
 	Lisha: {
@@ -61,8 +82,9 @@ export const data: Record<string, DataPoint> = {
 			return 109.1;
 		},
 		notes: {
-			v1_3_laternRite: '+1 Chests from 1.3 Lantern Rite',
-			v2_2_shadow: '+1 Chest from 2.2 Shadow of the Ancients'
+			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
+			v1_3_laternRite: '+1 Chests (+0,9%) from 1.3 Lantern Rite Event',
+			v2_2_shadow: '+1 Chest (+0,6%) from 2.2 Shadow of the Ancients Event'
 		}
 	},
 	'Qiongji Estuary': {
@@ -80,13 +102,14 @@ export const data: Record<string, DataPoint> = {
 			return 107.3;
 		},
 		notes: {
-			v1_3_laternRite: '+4 Chests from 1.3 Lantern Rite',
-			v2_2_shadow: '+1 Chest from 2.2 Shadow of the Ancients'
+			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
+			v1_3_laternRite: '+4 Chests (+1,4%) from 1.3 Lantern Rite Event',
+			v2_2_shadow: '+1 Chest (+0,3%) from 2.2 Shadow of the Ancients Event'
 		}
 	},
 	'Narukami Island': {
 		max: 111.7,
-		notes: { v2_0_lostRiches: 'your % can be higher due to 2.0 Lost Riches' }
+		notes: { v2_0_lostRiches: 'your Exploration Progress can be higher due to the 2.0 Lost Riches Event' }
 	},
 	Kannazuka: {
 		max: (opts) => {
@@ -97,16 +120,18 @@ export const data: Record<string, DataPoint> = {
 			return 115.3;
 		},
 		notes: {
-			v2_2_shadow: '+1 Chest from 2.2 Shadow of the Ancients',
-			v2_0_lostRiches: 'your % can be higher due to 2.0 Lost Riches'
+			v2_2_shadow: '+1 (+0,5%) Chest from 2.2 Shadow of the Ancients Event',
+			v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event'
 		}
 	},
 	'Yashiori Island': {
 		max: 118.5,
-		notes: { v2_0_lostRiches: 'your % can be higher due to 2.0 Lost Riches' }
+		notes: { v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event' }
 	},
 	'Seirai Island': { max: 110 },
-	'Watatsumi Island': { max: 109.6 },
+	'Watatsumi Island': { max: 109.6 ,
+		notes: { default: 'There are 4 missable Wooden crates in Suigetsu Pool, each worth 0.5%'}
+	},
 	'Tsurumi Island': { max: 110 },
 	'Lokapala Jungle': { max: 120.4 },
 	'Ardravi Valley': { max: 112.5 },
@@ -127,7 +152,9 @@ export const data: Record<string, DataPoint> = {
 	'Liffey Region': { max: 112.1 },
 	'Fontaine Research Institute of Kinetic Energy Engineering Region': { max: 111.8 },
 	'Erinnyes Forest': { max: 106.9 },
-	'Morte Region': { max: 114.1 },
+	'Morte Region': { max: 114.1 ,
+		notes: {default: 'Fixed Exploration % calculation in December 2023. MaxExploration progress can be 114.6'}
+	},
 	'Nostoi Region': { max: 109.9 },
 	'Tequemecan Valley': { max: 109.8 },
 	'Basin of Unnumbered Flames': { max: 113 },
