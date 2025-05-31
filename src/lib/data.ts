@@ -8,7 +8,7 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 109.1;
 		},
-		notes: { default: 'Default test note', v1_6_goldenApple: 'Tagged test note' }
+		notes: { default: 'lol', v1_6_goldenApple: 'Tagged test note' }
 	},
 	'Brightcrown Mountains': {
 		max: (opts) => {
