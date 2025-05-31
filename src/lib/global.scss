@@ -1,0 +1,28 @@
+@use '@picocss/pico/scss/pico' with (
+	$theme-color: 'azure'
+);
+
+.success {
+	--pico-progress-color: #a5d601;
+}
+
+@keyframes rainbow_animation {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 400% 0;
+	}
+}
+
+button[role='link'] {
+	padding: 0;
+	background-color: transparent !important;
+	border: none;
+
+	display: flex;
+	align-items: center;
+	gap: 0.1em;
+	text-decoration: none !important;
+}
