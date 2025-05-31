@@ -76,8 +76,6 @@
 	</Modal>
 {/if}
 
-<button onclick={() => (notesOpen = !notesOpen)}>{notesOpen}</button>
-
 <div class="grid">
 	<article>
 		<h2>Customize</h2>
