@@ -121,7 +121,7 @@ export const data: Record<string, DataPoint> = {
 		notes: {
 			v2_0_lostRiches: 'your Exploration Progress can be higher due to the 2.0 Lost Riches Event'
 		},
-		region: 'Liyue'
+		region: 'Inazuma'
 	},
 	Kannazuka: {
 		max: (opts) => {
@@ -135,7 +135,7 @@ export const data: Record<string, DataPoint> = {
 			v2_2_shadow: '+1 (+0,5%) Chest from 2.2 Shadow of the Ancients Event',
 			v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event'
 		},
-		region: 'Liyue'
+		region: 'Inazuma'
 	},
 	'Yashiori Island': {
 		max: 118.5,
