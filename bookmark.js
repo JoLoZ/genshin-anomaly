@@ -29,7 +29,7 @@
 				)
 					.then((r) => r.json())
 					.then((o) => {
-						if (!o.data.world_explorations) {
+						if (!o.data) {
 							window.open('%ORIGIN%/stats/unavailable', '_self');
 							return;
 						}
