@@ -117,11 +117,20 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each locations as loc}
+			{#each locations as loc, i}
 				{@const info = data[loc.name]}
+				{@const newRegion = i == 0 ? true : info.region != data[locations[i - 1].name].region}
 				{#if info}
 					{@const max = getDataPoint(info.max, opts)}
 					{@const noteCount = countNotes(loc)}
+
+					{#if newRegion}
+						<tr class="region">
+							<td colspan="4">
+								<strong>{info.region}</strong>
+							</td>
+						</tr>
+					{/if}
 					<tr>
 						<td>
 							<span>
@@ -181,6 +190,16 @@
 		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
 		}
+	}
+
+	thead {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+
+	.region td{
+		text-align: center !important;
 	}
 
 	td:first-child,
