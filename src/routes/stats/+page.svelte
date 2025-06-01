@@ -23,6 +23,7 @@
 		page.url.hash
 			.substring(1)
 			.split(';')
+			.filter((v) => v != '')
 			.map((v) => {
 				const split = v.split(':');
 				return { name: decodeURIComponent(split[0]), value: parseFloat(split[1]) };

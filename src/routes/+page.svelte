@@ -21,7 +21,7 @@
 		<a
 			draggable
 			href="javascript:{data.bookmark.replaceAll('%ORIGIN%', page.url.origin)}"
-			onclick={handleBookmarkClick}>Genshin Exploration</a
+			onclick={handleBookmarkClick}>Genshin Anomaly</a
 		>
 	</div>
 </header>
