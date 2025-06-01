@@ -62,7 +62,7 @@
 		</article>
 		<article>
 			<h2>Someone elses Exploration Stats</h2>
-
+			<p>Only works if the account have public battle chronicle display </p>
 			<form
 				onsubmit={(e) => {
 					e.preventDefault();

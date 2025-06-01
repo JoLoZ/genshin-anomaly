@@ -16,7 +16,7 @@
 	<div class:shake>
 		<h1>Genshin Exploration Tracker</h1>
 
-		<p>Drag this link into your bookmark bar and click it twice to get started!</p>
+		<p>Drag this link into your bookmark bar and click it to get started!</p>
 
 		<a
 			draggable
