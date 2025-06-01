@@ -18,7 +18,7 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
-			v1_6_goldenApple: '+1 Chest (+0,5%) from 1.6 Golden Apple Archipelago Event'
+			v1_6_goldenApple: '+1 Chest (+0.5%) from 1.6 Golden Apple Archipelago Event'
 		},
 		region: 'Mondstadt'
 	},
@@ -31,7 +31,7 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
-			v2_2_shadow: '+1 Chest (+0,5%) from 2.2 Shadow of the Ancients Event'
+			v2_2_shadow: '+1 Chest (+0.5%) from 2.2 Shadow of the Ancients Event'
 		},
 		region: 'Mondstadt'
 	},
@@ -44,7 +44,7 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
-			v1_3_laternRite: '+2 (+0,5%) Chest from 1.3 Lantern Rite Event'
+			v1_3_laternRite: '+2 (+0.5%) Chest from 1.3 Lantern Rite Event'
 		},
 		region: 'Liyue'
 	},
@@ -57,7 +57,7 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
-			v1_3_laternRite: '+3 Chest (+0,3%) from 1.3 Lantern Rite Event'
+			v1_3_laternRite: '+3 Chest (+0.3%) from 1.3 Lantern Rite Event'
 		},
 		region: 'Liyue'
 	},
@@ -70,7 +70,7 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
-			v1_3_laternRite: '+2 Chests (+1,8%) from 1.3 Lantern Rite Event'
+			v1_3_laternRite: '+2 Chests (+1.8%) from 1.3 Lantern Rite Event'
 		},
 		region: 'Liyue'
 	},
@@ -90,8 +90,8 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
-			v1_3_laternRite: '+1 Chests (+0,9%) from 1.3 Lantern Rite Event',
-			v2_2_shadow: '+1 Chest (+0,6%) from 2.2 Shadow of the Ancients Event'
+			v1_3_laternRite: '+1 Chests (+0.9%) from 1.3 Lantern Rite Event',
+			v2_2_shadow: '+1 Chest (+0.6%) from 2.2 Shadow of the Ancients Event'
 		},
 		region: 'Liyue'
 	},
@@ -111,8 +111,8 @@ export const data: Record<string, DataPoint> = {
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
-			v1_3_laternRite: '+4 Chests (+1,4%) from 1.3 Lantern Rite Event',
-			v2_2_shadow: '+1 Chest (+0,3%) from 2.2 Shadow of the Ancients Event'
+			v1_3_laternRite: '+4 Chests (+1.4%) from 1.3 Lantern Rite Event',
+			v2_2_shadow: '+1 Chest (+0.3%) from 2.2 Shadow of the Ancients Event'
 		},
 		region: 'Liyue'
 	},
@@ -132,7 +132,7 @@ export const data: Record<string, DataPoint> = {
 			return 115.3;
 		},
 		notes: {
-			v2_2_shadow: '+1 (+0,5%) Chest from 2.2 Shadow of the Ancients Event',
+			v2_2_shadow: '+1 (+0.5%) Chest from 2.2 Shadow of the Ancients Event',
 			v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event'
 		},
 		region: 'Inazuma'
@@ -177,7 +177,7 @@ export const data: Record<string, DataPoint> = {
 		max: 114.1,
 		notes: {
 			default:
-				'Fixed Exploration % calculation in December 2023. MaxExploration progress can be 114.6'
+				'Fixed Exploration % calculation in December 2023. Max Exploration progress can be 114.6'
 		},
 		region: 'Fontaine'
 	},
