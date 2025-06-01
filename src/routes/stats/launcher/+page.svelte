@@ -40,7 +40,7 @@
 		}
 
 		const version = parseInt(page.url.hash.substring(1));
-		if (version < latestVersion) {
+		if (version < latestVersion && version != 0) {
 			outdatedBookmark = true;
 		}
 	});
