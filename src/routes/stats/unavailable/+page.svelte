@@ -1,6 +1,6 @@
 <div class="wrapper">
-	<h1>Exploration stats unavailable</h1>
-	<p>It appears that the user requested doesn't have their exploration stats publicly available.</p>
+	<h1>Battle Chronicle unavailable</h1>
+	<p>It appears that the user requested doesn't have their Battle Chronicle publicly available.</p>
 	<a href="/stats/launcher#0" role="button">Try another UID</a>
 </div>
 
