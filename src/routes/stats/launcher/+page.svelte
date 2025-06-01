@@ -50,6 +50,7 @@
 	<div class="grid">
 		<article>
 			<h2>Your own Exploration Stats</h2>
+			<p>You have to be logged into Hoyolab</p>
 
 			<button
 				onclick={() => {
@@ -62,7 +63,7 @@
 		</article>
 		<article>
 			<h2>Someone elses Exploration Stats</h2>
-			<p>Only works if the account have public battle chronicle display </p>
+			<p>Only works if the account have public battle chronicle displayed</p>
 			<form
 				onsubmit={(e) => {
 					e.preventDefault();
@@ -76,7 +77,7 @@
 				<fieldset role="group">
 					<input
 						type="text"
-						placeholder="User UID"
+						placeholder="Genshin UID"
 						required
 						bind:value={uid}
 						aria-invalid={uidInvalid}
