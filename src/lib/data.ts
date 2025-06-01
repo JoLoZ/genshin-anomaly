@@ -109,7 +109,9 @@ export const data: Record<string, DataPoint> = {
 	},
 	'Narukami Island': {
 		max: 111.7,
-		notes: { v2_0_lostRiches: 'your Exploration Progress can be higher due to the 2.0 Lost Riches Event' }
+		notes: {
+			v2_0_lostRiches: 'your Exploration Progress can be higher due to the 2.0 Lost Riches Event'
+		}
 	},
 	Kannazuka: {
 		max: (opts) => {
@@ -126,11 +128,14 @@ export const data: Record<string, DataPoint> = {
 	},
 	'Yashiori Island': {
 		max: 118.5,
-		notes: { v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event' }
+		notes: {
+			v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event'
+		}
 	},
 	'Seirai Island': { max: 110 },
-	'Watatsumi Island': { max: 109.6 ,
-		notes: { default: 'There are 4 missable Wooden crates in Suigetsu Pool, each worth 0.5%'}
+	'Watatsumi Island': {
+		max: 109.6,
+		notes: { default: 'There are 4 missable Wooden crates in Suigetsu Pool, each worth 0.5%' }
 	},
 	'Tsurumi Island': { max: 110 },
 	'Lokapala Jungle': { max: 120.4 },
@@ -152,8 +157,12 @@ export const data: Record<string, DataPoint> = {
 	'Liffey Region': { max: 112.1 },
 	'Fontaine Research Institute of Kinetic Energy Engineering Region': { max: 111.8 },
 	'Erinnyes Forest': { max: 106.9 },
-	'Morte Region': { max: 114.1 ,
-		notes: {default: 'Fixed Exploration % calculation in December 2023. MaxExploration progress can be 114.6'}
+	'Morte Region': {
+		max: 114.1,
+		notes: {
+			default:
+				'Fixed Exploration % calculation in December 2023. MaxExploration progress can be 114.6'
+		}
 	},
 	'Nostoi Region': { max: 109.9 },
 	'Tequemecan Valley': { max: 109.8 },
