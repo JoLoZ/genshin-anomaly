@@ -1,6 +1,11 @@
 export const data: Record<string, DataPoint> = {
 	'Starfell Valley': {
-		max: 102.1,
+		max: (opts) => {
+			if (opts.v1_6_goldenApple) {
+				return 102.1;
+			}
+			return 102.5;
+		},
 		notes: { default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off' },
 		region: 'Mondstadt'
 	},
@@ -10,12 +15,7 @@ export const data: Record<string, DataPoint> = {
 		region: 'Mondstadt'
 	},
 	'Windwail Highland': {
-		max: (opts) => {
-			if (opts.v1_6_goldenApple) {
-				return 109.6;
-			}
-			return 109.1;
-		},
+		max: 109.1,
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
 			v1_6_goldenApple: '+1 Chest (+0.5%) from 1.6 Golden Apple Archipelago Event'
@@ -142,7 +142,7 @@ export const data: Record<string, DataPoint> = {
 		notes: {
 			v2_0_lostRiches: 'your Exploration Progress can be higher due to 2.0 Lost Riches Event'
 		},
-		 region: 'Inazuma'
+		region: 'Inazuma'
 	},
 	'Seirai Island': { max: 110, region: 'Inazuma' },
 	'Watatsumi Island': {
