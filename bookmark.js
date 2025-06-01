@@ -3,7 +3,7 @@
 	const s = location.hash.split('?')[0];
 
 	if (!location.href.startsWith(u) || (s != '#/ys' && s != '#/ys/exploration')) {
-		window.open('%ORIGIN%/stats/launcher#2', '_self');
+		window.open('%ORIGIN%/stats/launcher#3', '_self');
 		return;
 	}
 

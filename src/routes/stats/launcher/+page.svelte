@@ -30,12 +30,34 @@
 
 	let uidInvalid = $derived(uid == '' ? undefined : link.includes('_ERROR'));
 
+	let outdatedBookmark = $state(false);
+
+	const latestVersion = 3;
+
 	onMount(() => {
 		if (page.url.hash == '#' || !page.url.hash) {
 			goto('/');
 		}
+
+		const version = parseInt(page.url.hash.substring(1));
+		if (version < latestVersion) {
+			outdatedBookmark = true;
+		}
 	});
 </script>
+
+<Modal bind:open={outdatedBookmark}>
+	<header>
+		<strong>Outdated Bookmark</strong>
+	</header>
+	<p>We've released a new version of the bookmark script that features improved stability.</p>
+	<p>
+		Please update your bookmark by removing it and adding the current version from our homepage.
+	</p>
+	<footer>
+		<a href="/" role="button"> Continue </a>
+	</footer>
+</Modal>
 
 <Modal bind:open={modalOpen}>
 	<p>Once the page has loaded, click on the bookmark again to continue.</p>
