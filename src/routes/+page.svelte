@@ -28,7 +28,7 @@
 
 <style>
 	header {
-		min-height: calc(100vh - var(--pico-nav-element-spacing-vertical) * 4 - 2em);
+		min-height: var(--full-height);
 		display: flex;
 		align-items: center;
 		justify-content: center;

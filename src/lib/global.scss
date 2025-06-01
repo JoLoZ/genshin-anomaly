@@ -2,6 +2,10 @@
 	$theme-color: 'azure'
 );
 
+body {
+	--full-height: calc(100vh - var(--pico-nav-element-spacing-vertical) * 4 - 2em);
+}
+
 .success {
 	--pico-progress-color: #a5d601;
 }

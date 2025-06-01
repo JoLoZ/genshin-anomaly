@@ -1,21 +1,21 @@
 (() => {
+	const u = 'https://act.hoyolab.com/app/community-game-records-sea/index.html';
+	const s = location.hash.split('?')[0];
+
+	if (!location.href.startsWith(u) || (s != '#/ys' && s != '#/ys/exploration')) {
+		window.open('%ORIGIN%/stats/launcher#2', '_self');
+		return;
+	}
+
 	const l = document.createElement('div');
 	l.setAttribute(
 		'style',
 		'height: 100vh; width: 100vw; position: fixed; background: #000b; color: #fff; z-index: 9999;top: 0;display: flex;align-items: center;justify-content: center;'
 	);
-	l.innerText = 'Collecting Exploration data...';
+	l.innerText = 'Gathering exploration data...';
 	document.body.append(l);
+
 	try {
-		const u = 'https://act.hoyolab.com/app/community-game-records-sea/index.html#/ys';
-		const s = location.hash.split('?')[0];
-
-		if (!location.href.startsWith(u) || (s != '#/ys' && s != '#/ys/exploration')) {
-			alert('Navigating to the Battle Chronicle. Click the bookmark again after it loads.');
-			window.open(u, '_self');
-			return;
-		}
-
 		const explorationInterval = setInterval(() => {
 			if (!location.hash.split('?')[1]) {
 				return;
@@ -44,8 +44,9 @@
 		}
 
 		document.querySelector('#anchor_exploration .block-title-text-more').click();
+		return;
 	} catch (e) {
 		alert('Something went wrong! Please try again.\nError: ' + e.toString());
-		l.remove();
 	}
+	l.remove();
 })();
