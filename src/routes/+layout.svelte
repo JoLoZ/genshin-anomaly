@@ -30,3 +30,17 @@
 <main class="container">
 	{@render children()}
 </main>
+
+<footer class="container">
+	<p>
+		<small>
+			Powered by <a href="https://moonsha.de" target="_blank">Moonshade</a>
+		</small>
+	</p>
+</footer>
+
+<style>
+	footer {
+		text-align: center;
+	}
+</style>
