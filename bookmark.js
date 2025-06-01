@@ -17,27 +17,32 @@
 
 	try {
 		const explorationInterval = setInterval(() => {
-			if (!location.hash.split('?')[1]) {
-				return;
+			try {
+				if (!location.hash.split('?')[1]) {
+					return;
+				}
+				clearInterval(explorationInterval);
+				fetch(
+					'https://sg-public-api.hoyolab.com/event/game_record/genshin/api/index?' +
+						location.hash.split('?')[1],
+					{ headers: { 'x-rpc-language': 'en-us' }, credentials: 'include' }
+				)
+					.then((r) => r.json())
+					.then((o) => {
+						window.open(
+							'%ORIGIN%/stats#' +
+								o.data.world_explorations
+									.reverse()
+									.flatMap((w) => w.area_exploration_list)
+									.map((o) => `${o.name}:${(o.exploration_percentage / 10).toFixed(1)}`)
+									.join(';'),
+							'_self'
+						);
+					});
+			} catch {
+				alert('Something went wrong! Please try again.\nError: ' + e.toString());
+				l.remove();
 			}
-			clearInterval(explorationInterval);
-			fetch(
-				'https://sg-public-api.hoyolab.com/event/game_record/genshin/api/index?' +
-					location.hash.split('?')[1],
-				{ headers: { 'x-rpc-language': 'en-us' }, credentials: 'include' }
-			)
-				.then((r) => r.json())
-				.then((o) => {
-					window.open(
-						'%ORIGIN%/stats#' +
-							o.data.world_explorations
-								.reverse()
-								.flatMap((w) => w.area_exploration_list)
-								.map((o) => `${o.name}:${(o.exploration_percentage / 10).toFixed(1)}`)
-								.join(';'),
-						'_self'
-					);
-				});
 		}, 10);
 		if (s == '#/ys/exploration') {
 			return;
@@ -47,6 +52,6 @@
 		return;
 	} catch (e) {
 		alert('Something went wrong! Please try again.\nError: ' + e.toString());
+		l.remove();
 	}
-	l.remove();
 })();
