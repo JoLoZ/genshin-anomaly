@@ -1,15 +1,23 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import Icon from '$lib/components/Icon.svelte';
 	import Modal from '$lib/components/Modal.svelte';
 	import { data, getDataPoint } from '$lib/data';
 
 	import { mdiInformation } from '@mdi/js';
+	import { onMount } from 'svelte';
 
 	interface Loc {
 		name: string;
 		value: number;
 	}
+
+	onMount(() => {
+		if (page.url.hash == '#' || page.url.hash == '') {
+			goto('/');
+		}
+	});
 
 	let locations: Loc[] = $derived(
 		page.url.hash
@@ -79,6 +87,7 @@
 <div class="grid">
 	<article>
 		<h2>Customize</h2>
+		<p>I've participated in these events:</p>
 		<label>
 			<input type="checkbox" bind:checked={opts.v1_3_laternRite} />
 			1.3 Lantern Rite Event
