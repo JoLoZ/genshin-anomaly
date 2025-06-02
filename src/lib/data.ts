@@ -25,7 +25,12 @@ export const data: Record<string, DataPoint> = {
 		region: 'Mondstadt'
 	},
 	'Brightcrown Mountains': {
-		max: 106.1,
+		max: (opts) => {
+			if (opts.v2_2_shadow) {
+				return 106.6;
+			}
+			return 106.1;
+		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
 			v2_2_shadow: '+1 Chest (+0.5%) from 2.2 Shadow of the Ancients Event'
