@@ -1,0 +1,16 @@
+name: Wrong datapoint
+description: Report a wrong datapoint
+labels: ['data']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What datapoint is wrong?
+      description: Also tell us, what did you expect?
+      placeholder: The percentage of...
+    validations:
+      required: true
