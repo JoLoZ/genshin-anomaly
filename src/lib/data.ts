@@ -6,7 +6,10 @@ export const data: Record<string, DataPoint> = {
 			}
 			return 102.1;
 		},
-		notes: { default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off' },
+		notes: {
+			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
+			v1_6_goldenApple: '+1 Chest (+0.5%) from 1.6 Golden Apple Archipelago Event'
+		},
 		region: 'Mondstadt'
 	},
 	'Galesong Hill': {
@@ -17,8 +20,7 @@ export const data: Record<string, DataPoint> = {
 	'Windwail Highland': {
 		max: 109.1,
 		notes: {
-			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
-			v1_6_goldenApple: '+1 Chest (+0.5%) from 1.6 Golden Apple Archipelago Event'
+			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off'
 		},
 		region: 'Mondstadt'
 	},
