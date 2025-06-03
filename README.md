@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/use_online-genshin.wife4.dev-01aaff?style=for-the-badge)](https://genshin.wife4.dev)
 [![](https://img.shields.io/github/issues/JoLoZ/genshin-anomaly?label=Report%20issue&style=for-the-badge)](https://github.com/JoLoZ/genshin-anomaly/issues)
-[![](https://img.shields.io/github/last-commit/JoLoZ/genshin-anomaly/main?label=Last%20Update&style=for-the-badge)](https://github.com/JoLoZ/genshin-anomaly/issues)
+[![](https://img.shields.io/github/last-commit/JoLoZ/genshin-anomaly/main?label=Last%20Update&style=for-the-badge)](https://github.com/JoLoZ/genshin-anomaly/commits)
 
 ## What is this?
 
