@@ -34,7 +34,9 @@
 <footer class="container">
 	<p>
 		<small>
-			Powered by <a href="https://moonsha.de" target="_blank">Moonshade</a>
+			Powered by <a href="https://moonsha.de" target="_blank">Moonshade</a> -
+			<a href="https://github.com/JoLoZ/genshin-anomaly" target="_blank">Source Code</a> -
+			<a href="https://github.com/JoLoZ/genshin-anomaly/issues" target="_blank">Report issue</a>
 		</small>
 	</p>
 </footer>
