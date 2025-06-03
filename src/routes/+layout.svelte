@@ -24,6 +24,7 @@
 	</ul>
 	<ul>
 		<li><a href="/">Home</a></li>
+		<li><a href="/percentages">Percentage changes</a></li>
 	</ul>
 </nav>
 
