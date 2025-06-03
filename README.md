@@ -6,11 +6,11 @@
 
 ## What is this?
 
-Genshin Anomaly allows you to extract exploration statistics from Hoyolabs Battle Chronicles that go beyond 100% and allows you to easily visualise them using the website.
+Genshin Anomaly allows you to extract exploration statistics of the main regions from Hoyolabs Battle Chronicles that go beyond 100% and allows you to easily visualise them using the website.
 
 ## Usage
 
-To use Genshin Anomaly, go to [the website](https://genshin.wife4.dev) and drag the link on the website into your bookmark bar. Then click on it to start the process. Click on it once on the Battle Chronicles page to gather the statistics.
+To use Genshin Anomaly, go to [the website](https://genshin.wife4.dev) and drag the link on the website into your bookmark bar. Click on the bookmark to start the process. Once the Battle Chronicle page is opened press on the bookmark again to start the process. When the data collection is finished you'll land on an overview of your exploration percentages.
 
 ## Development
 
