@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
 			<th>Region</th>
-			<th>Location <br /> %-chan be off due to rounding</th>
+			<th>Location <br /> %-chan can be off due to rounding</th>
 			<th class="percentages">Mora</th>
 			<th class="percentages">Chest</th>
 		</tr>
