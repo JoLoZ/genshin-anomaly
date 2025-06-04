@@ -80,7 +80,7 @@ export const data: Record<string, DataPoint> = {
 	Lisha: {
 		max: (opts) => {
 			if (opts.v1_3_laternRite && opts.v2_2_shadow) {
-				return 110.8;
+				return 110.6;
 			}
 			if (opts.v2_2_shadow) {
 				return 109.7;
@@ -100,7 +100,7 @@ export const data: Record<string, DataPoint> = {
 	'Qiongji Estuary': {
 		max: (opts) => {
 			if (opts.v1_3_laternRite && opts.v2_2_shadow) {
-				return 109.4;
+				return 109;
 			}
 			if (opts.v2_2_shadow) {
 				return 107.6;
