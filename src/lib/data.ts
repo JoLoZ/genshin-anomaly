@@ -80,19 +80,19 @@ export const data: Record<string, DataPoint> = {
 	Lisha: {
 		max: (opts) => {
 			if (opts.v1_3_laternRite && opts.v2_2_shadow) {
-				return 110.6;
+				return 110.2;
 			}
 			if (opts.v2_2_shadow) {
 				return 109.7;
 			}
 			if (opts.v1_3_laternRite) {
-				return 110;
+				return 109.7;
 			}
 			return 109.1;
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Liyue numbers can be off',
-			v1_3_laternRite: '+1 Chests (+0.9%) from 1.3 Lantern Rite Event',
+			v1_3_laternRite: '+1 Chests (+0.6%) from 1.3 Lantern Rite Event',
 			v2_2_shadow: '+1 Chest (+0.6%) from 2.2 Shadow of the Ancients Event'
 		},
 		region: 'Liyue'
