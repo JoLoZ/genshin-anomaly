@@ -14,6 +14,7 @@
 			let server = '';
 
 			const serverMap: Record<string, string> = {
+				'1': 'os_asia',
 				'6': 'os_usa',
 				'7': 'os_euro',
 				'8': 'os_asia',
