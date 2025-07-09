@@ -58,17 +58,17 @@
 		<tr>
 			<td rowspan="6" class="region">Inazuma</td>
 			<td class="subregion">Narukami Island</td>
-			<td class="region">0.3%</td>
-			<td class="region">0.3%</td>
+			<td class="region">0.3%-0.4%</td>
+			<td class="region">0.3%-0.4%</td>
 		</tr>
 		<tr>
 			<td>Kannazuka</td>
-			<td class="percentages">0.4%</td>
-			<td class="percentages">0.4%</td>
+			<td class="percentages">0.4%-0.5%</td>
+			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
 			<td>Yashiori Island</td>
-			<td class="percentages">0.5%</td>
+			<td class="percentages">0.5%-0.6%</td>
 			<td class="percentages">0.5%-0.6%</td>
 		</tr>
 		<tr>
@@ -79,7 +79,7 @@
 		<tr>
 			<td class="v-switch-subregion">Watatsumi Island</td>
 			<td class="v-switch">0.5%-0.6%</td>
-			<td class="v-switch">0.5%</td>
+			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
 			<td>Tsurumi Island</td>
@@ -95,17 +95,17 @@
 		<tr>
 			<td>Ardravi Valley</td>
 			<td class="percentages">0.1%-0.2%</td>
-			<td class="percentages">0.8%-0.9%</td>
+			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
 			<td>Vissudha Field</td>
 			<td class="percentages">0.2%-0.3%</td>
-			<td class="percentages">0.7%</td>
+			<td class="percentages">0.7%-0.8%</td>
 		</tr>
 		<tr>
 			<td>Ashavan Realm </td>
 			<td class="percentages">0.1%-0.2%</td>
-			<td class="percentages">0.3%</td>
+			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
 			<td>Avidya Forest </td>
@@ -114,12 +114,12 @@
 		</tr>
 		<tr>
 			<td>Lost Nursery</td>
-			<td class="percentages">1.6%</td>
-			<td class="percentages">No data so far</td>
+			<td class="percentages">1.6%-1.7%</td>
+			<td class="percentages">4.0%-4.1%</td>
 		</tr>
 		<tr>
 			<td>Vanarana</td>
-			<td class="percentages">1.2%</td>
+			<td class="percentages">1.2%-1.3%</td>
 			<td class="percentages">3.0%-3.1%</td>
 		</tr>
 		<tr>
@@ -170,13 +170,13 @@
 		</tr>
 		<tr>
 			<td class="v-switch-subregion">Liffey Region</td>
-			<td class="v-switch">0.2%</td>
+			<td class="v-switch">0.2%-0.3%</td>
 			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
 			<td class="v-switch-subregion">Fontaine Research Institute of Kinetic Energy Engineering Region</td>
 			<td class="v-switch">0.1%-0.2%</td>
-			<td class="v-switch">0.3%</td>
+			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
 		<tr>
 			<td>Erynnes Forest</td>
@@ -190,7 +190,7 @@
 		</tr>
 		<tr>
 			<td class="v-switch-subregion">Nostoi Region</td>
-			<td class="v-switch">0.5%</td>
+			<td class="v-switch">0.4%-0.5%</td>
 			<td class="v-switch">1.2%-1.3%</td>
 		</tr>
 		<tr>
@@ -202,7 +202,7 @@
 		<tr>
 			<td>Basin of Unnumbered Flames </td>
 			<td class="percentages">0.2%-0.3%</td>
-			<td class="percentages">0.6%</td>
+			<td class="percentages">0.5%-0.6%</td>
 		</tr>
 		<tr>
 			<td>Toyac Springs</td>
