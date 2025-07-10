@@ -35,7 +35,8 @@
 		v1_3_laternRite: false,
 		v1_6_goldenApple: false,
 		v2_0_lostRiches: false,
-		v2_2_shadow: false
+		v2_2_shadow: false,
+		show_changes: false
 	});
 
 	function countNotes(loc: Loc) {
@@ -87,7 +88,7 @@
 
 <div class="grid">
 	<article>
-		<h2>Customize</h2>
+		<h3>Customize</h3>
 		<p>I've participated in these events:</p>
 		<label>
 			<input type="checkbox" bind:checked={opts.v1_3_laternRite} />
@@ -105,6 +106,11 @@
 			<input type="checkbox" bind:checked={opts.v2_2_shadow} />
 			2.2 Shadow of the Ancients Event
 		</label>
+		<h3>Settings</h3>
+		<label>
+			<input type="checkbox" bind:checked={opts.show_changes} />
+			Show Mora and Chest changes
+		</label>
 	</article>
 
 	<table>
@@ -114,6 +120,10 @@
 				<th>Progress</th>
 				<th>Max</th>
 				<th>Progress</th>
+				{#if opts.show_changes}
+					<th class="change">Mora%</th>
+					<th class="change">Chest%</th>
+				{/if}
 			</tr>
 		</thead>
 		<tbody>
@@ -126,7 +136,7 @@
 
 					{#if newRegion}
 						<tr class="region">
-							<td colspan="4">
+							<td colspan="6">
 								<strong>{info.region}</strong>
 							</td>
 						</tr>
@@ -169,6 +179,14 @@
 							{max.toFixed(1)}%
 						</td>
 						<td><progress value={loc.value} {max} class:success={loc.value >= max}></progress></td>
+						{#if opts.show_changes}
+						<td class="change">
+							{info.moraChanges}
+						</td>
+						<td class="change">
+							{info.chestChanges}
+						</td>
+						{/if}
 					</tr>
 				{/if}
 			{:else}
@@ -198,14 +216,14 @@
 		z-index: 10;
 	}
 
-	.region td{
+	.region td {
 		text-align: center !important;
 	}
 
 	td:first-child,
 	th:first-child,
-	td:last-child,
-	th:last-child {
+	td:nth-child(4),
+	th:nth-child(4){
 		text-align: start;
 		white-space: wrap;
 	}
@@ -223,6 +241,9 @@
 	th {
 		text-align: end;
 		white-space: nowrap;
+	}
+	.change {
+		text-align: center;
 	}
 
 	.rainbow {
