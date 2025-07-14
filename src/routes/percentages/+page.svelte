@@ -206,7 +206,7 @@
 		</tr>
 		<tr>
 			<td>Toyac Springs</td>
-			<td class="percentages">0.2%-0.3%</td>
+			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
@@ -217,7 +217,7 @@
 		<tr>
 			<td class="v-switch-subregion">Tezcatepetonco Range</td>
 			<td class="v-switch">0.2%-0.3%</td>
-			<td class="v-switch">0.6%</td>
+			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
 			<td class="v-switch-subregion">Ochkanatlan</td>
@@ -232,7 +232,7 @@
 		<tr>
 			<td>Atocpan</td>
 			<td class="percentages">0.1%-0.2%</td>
-			<td class="percentages">0.3%</td>
+			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 	</tbody>
 </table>

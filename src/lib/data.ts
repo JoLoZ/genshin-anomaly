@@ -329,7 +329,7 @@ export const data: Record<string, DataPoint> = {
 	'Toyac Springs': {
 		max: 112.9,
 		region: 'Natlan',
-		moraChanges: '0.2%-0.3%',
+		moraChanges: '0.1%-0.2%',
 		chestChanges: '0.4%-0.5%'
 	},
 	'Coatepec Mountain': {
@@ -353,10 +353,15 @@ export const data: Record<string, DataPoint> = {
 	'Quahuacan Cliff': {
 		max: 108.5,
 		region: 'Natlan',
-		moraChanges: '0.1%-0.2%',
+		moraChanges: '0.3%-0.4%',
 		chestChanges: '0.9%-1.0%'
 	},
-	Atocpan: { max: 110, region: 'Natlan', moraChanges: '0.1%-0.2%', chestChanges: '0.3%-0.4%' }
+	Atocpan: {
+		max: 110,
+		region: 'Natlan',
+		moraChanges: '0.1%-0.2%',
+		chestChanges: '0.3%-0.4%'
+	}
 };
 
 export function getDataPoint(v: dataSource, opts: Options) {
