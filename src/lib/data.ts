@@ -48,7 +48,7 @@ export const data: Record<string, DataPoint> = {
 	'Bishui Plain': {
 		max: (opts) => {
 			if (opts.v1_3_laternRite) {
-				return 106.2;
+				return 106.0;
 			}
 			return 105.7;
 		},
