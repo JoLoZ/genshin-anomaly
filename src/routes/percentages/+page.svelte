@@ -235,9 +235,9 @@
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Easybreeze Holiday Resort</td>
-			<td class="percentages">Yet unkown data</td>
-			<td class="percentages">Yet unkown data</td>
+			<td class="v-switch-subregion">Easybreeze Holiday Resort</td>
+			<td class="v-switch">Yet unkown data</td>
+			<td class="v-switch">Yet unkown data</td>
 		</tr>
 	</tbody>
 </table>
