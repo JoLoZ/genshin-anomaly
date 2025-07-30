@@ -194,7 +194,7 @@
 			<td class="v-switch">1.2%-1.3%</td>
 		</tr>
 		<tr>
-			<td rowspan="8" class="region">Natlan</td>
+			<td rowspan="9" class="region">Natlan</td>
 			<td class="subregion">Tequemecan Valley</td>
 			<td class="region">0.1%-0.2%</td>
 			<td class="region">0.3%-0.4%</td>
@@ -236,8 +236,8 @@
 		</tr>
 		<tr>
 			<td>Easybreeze Holiday Resort</td>
-			<td class="percentages">Yet unknown Data</td>
-			<td class="percentages">Yet unknown Data</td>
+			<td class="percentages">Yet unkown data</td>
+			<td class="percentages">Yet unkown data</td>
 		</tr>
 	</tbody>
 </table>
