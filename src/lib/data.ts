@@ -363,14 +363,10 @@ export const data: Record<string, DataPoint> = {
 		chestChanges: '0.3%-0.4%'
 	},
 	'Easybreeze Holiday Resort': {
-		max: 0,
+		max: 109.6,
 		region: 'Natlan',
-		notes: {
-			default:
-				'Yet unknown Data'
-		},
-		moraChanges: '--',
-		chestChanges: '--'
+		moraChanges: '0.0%-0.1%',
+		chestChanges: '0.2%-0.3%'
 	}
 };
 

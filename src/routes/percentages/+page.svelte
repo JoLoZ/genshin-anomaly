@@ -174,7 +174,9 @@
 			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Fontaine Research Institute of Kinetic Energy Engineering Region</td>
+			<td class="v-switch-subregion"
+				>Fontaine Research Institute of Kinetic Energy Engineering Region</td
+			>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
@@ -210,7 +212,7 @@
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td >Coatepec Mountain</td>
+			<td>Coatepec Mountain</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
@@ -236,31 +238,32 @@
 		</tr>
 		<tr>
 			<td class="v-switch-subregion">Easybreeze Holiday Resort</td>
-			<td class="v-switch">Yet unkown data</td>
-			<td class="v-switch">Yet unkown data</td>
+			<td class="v-switch">0.0%-0.1%</td>
+			<td class="v-switch">0.2%-0.3%</td>
 		</tr>
 	</tbody>
 </table>
+
 <style>
-     .percentages {
-        text-align: center;
-     }
-     .region {
-        text-align: center;
-        border-top-style:solid;
-        border-top-color: var(--pico-color);
-        border-top-width: 2px
-     }
-     .subregion {
-        border-top-style:solid;
-        border-top-color: var(--pico-color);
-        border-top-width: 2px
-     }
-     .v-switch-subregion {
-        background-color: var(--pico-table-row-stripped-background-color);
-         }
-     .v-switch {
-        background-color: var(--pico-table-row-stripped-background-color);
-        text-align: center;
-     }
+	.percentages {
+		text-align: center;
+	}
+	.region {
+		text-align: center;
+		border-top-style: solid;
+		border-top-color: var(--pico-color);
+		border-top-width: 2px;
+	}
+	.subregion {
+		border-top-style: solid;
+		border-top-color: var(--pico-color);
+		border-top-width: 2px;
+	}
+	.v-switch-subregion {
+		background-color: var(--pico-table-row-stripped-background-color);
+	}
+	.v-switch {
+		background-color: var(--pico-table-row-stripped-background-color);
+		text-align: center;
+	}
 </style>
