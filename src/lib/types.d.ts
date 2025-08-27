@@ -5,12 +5,13 @@ interface Options {
 	v2_0_lostRiches: boolean;
 	v2_2_shadow: boolean;
 	show_changes: boolean;
+	hide_finished: boolean;
 }
 
 interface DataPoint {
 	max: dataSource;
 	notes?: Partial<Record<keyof Options, string>>;
-	region: 'Mondstadt' | 'Liyue' | 'Inazuma' | 'Sumeru' | 'Fontaine' | 'Natlan';
+	region: 'Mondstadt' | 'Liyue' | 'Inazuma' | 'Sumeru' | 'Fontaine' | 'Natlan' | 'Nod-Krai';
 	moraChanges: string;
 	chestChanges: string;
 }

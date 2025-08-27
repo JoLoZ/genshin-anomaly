@@ -36,7 +36,8 @@
 		v1_6_goldenApple: false,
 		v2_0_lostRiches: false,
 		v2_2_shadow: false,
-		show_changes: false
+		show_changes: false,
+		hide_finished: false
 	});
 
 	function countNotes(loc: Loc) {
@@ -111,6 +112,10 @@
 			<input type="checkbox" bind:checked={opts.show_changes} />
 			Show Mora and Chest changes
 		</label>
+		<label>
+			<input type="checkbox" bind:checked={opts.hide_finished} />
+			Hide finished Subregions
+		</label>
 	</article>
 
 	<table>
@@ -133,61 +138,63 @@
 				{#if info}
 					{@const max = getDataPoint(info.max, opts)}
 					{@const noteCount = countNotes(loc)}
+					{#if !opts.hide_finished || max > loc.value}
+						{#if newRegion}
+							<tr class="region">
+								<td colspan="6">
+									<strong>{info.region}</strong>
+								</td>
+							</tr>
+						{/if}
+						<tr>
+							<td>
+								<span>
+									{loc.name}
 
-					{#if newRegion}
-						<tr class="region">
-							<td colspan="6">
-								<strong>{info.region}</strong>
+									{#if noteCount > 0}
+										<button
+											role="link"
+											class="warnings"
+											data-tooltip="There {noteCount == 1
+												? 'is'
+												: 'are'} {noteCount} note{noteCount == 1 ? '' : 's'} about this area"
+											onclick={() => {
+												notesOpen = true;
+												notesName = loc.name;
+												notesLoc = info;
+											}}
+										>
+											<Icon d={mdiInformation}></Icon>
+											{countNotes(loc)}
+										</button>
+									{/if}</span
+								>
 							</td>
+							<td>
+								<span
+									class:rainbow={loc.value > max}
+									data-tooltip={loc.value > max
+										? 'This percentage is above the currently known maximum'
+										: undefined}
+								>
+									{loc.value.toFixed(1)}%
+								</span>
+							</td>
+							<td>
+								{max.toFixed(1)}%
+							</td>
+							<td><progress value={loc.value} {max} class:success={loc.value >= max}></progress></td
+							>
+							{#if opts.show_changes}
+								<td class="change">
+									{info.moraChanges}
+								</td>
+								<td class="change">
+									{info.chestChanges}
+								</td>
+							{/if}
 						</tr>
 					{/if}
-					<tr>
-						<td>
-							<span>
-								{loc.name}
-
-								{#if noteCount > 0}
-									<button
-										role="link"
-										class="warnings"
-										data-tooltip="There {noteCount == 1
-											? 'is'
-											: 'are'} {noteCount} note{noteCount == 1 ? '' : 's'} about this area"
-										onclick={() => {
-											notesOpen = true;
-											notesName = loc.name;
-											notesLoc = info;
-										}}
-									>
-										<Icon d={mdiInformation}></Icon>
-										{countNotes(loc)}
-									</button>
-								{/if}</span
-							>
-						</td>
-						<td>
-							<span
-								class:rainbow={loc.value > max}
-								data-tooltip={loc.value > max
-									? 'This percentage is above the currently known maximum'
-									: undefined}
-							>
-								{loc.value.toFixed(1)}%
-							</span>
-						</td>
-						<td>
-							{max.toFixed(1)}%
-						</td>
-						<td><progress value={loc.value} {max} class:success={loc.value >= max}></progress></td>
-						{#if opts.show_changes}
-						<td class="change">
-							{info.moraChanges}
-						</td>
-						<td class="change">
-							{info.chestChanges}
-						</td>
-						{/if}
-					</tr>
 				{/if}
 			{:else}
 				<tr>
@@ -223,7 +230,7 @@
 	td:first-child,
 	th:first-child,
 	td:nth-child(4),
-	th:nth-child(4){
+	th:nth-child(4) {
 		text-align: start;
 		white-space: wrap;
 	}
