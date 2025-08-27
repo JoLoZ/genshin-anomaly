@@ -124,7 +124,7 @@
 				<th>Location</th>
 				<th>Progress</th>
 				<th>Max</th>
-				<th>Progress</th>
+				<th>Progressbar</th>
 				{#if opts.show_changes}
 					<th class="change">Mora%</th>
 					<th class="change">Chest%</th>
