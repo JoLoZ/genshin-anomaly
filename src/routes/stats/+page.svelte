@@ -138,15 +138,15 @@
 				{#if info}
 					{@const max = getDataPoint(info.max, opts)}
 					{@const noteCount = countNotes(loc)}
+					{#if newRegion}
+					<tr class="region">
+						<td colspan="6">
+							<strong>{info.region}</strong>
+						</td>
+					</tr>
+					{/if}
 					{#if !opts.hide_finished || max > loc.value}
-						{#if newRegion}
-							<tr class="region">
-								<td colspan="6">
-									<strong>{info.region}</strong>
-								</td>
-							</tr>
-						{/if}
-						<tr>
+					<tr>
 							<td>
 								<span>
 									{loc.name}
