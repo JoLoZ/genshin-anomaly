@@ -367,6 +367,24 @@ export const data: Record<string, DataPoint> = {
 		region: 'Natlan',
 		moraChanges: '0.0%-0.1%',
 		chestChanges: '0.2%-0.3%'
+	},
+	'Lempo Isle': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: 'unknown',
+		chestChanges: 'unknown'
+	},
+	'Paha Isle': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: 'unknown',
+		chestChanges: 'unknown'
+	},
+	'Hiisi Island': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: 'unknown',
+		chestChanges: 'unknown'
 	}
 };
 
