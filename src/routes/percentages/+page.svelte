@@ -139,7 +139,7 @@
 		</tr>
 		<tr>
 			<td>Desert of Hadramaveth</td>
-			<td class="percentages">less than 0.1%</td>
+			<td class="percentages">0.0%-0.1%</td>
 			<td class="percentages">0.1%-0.2%</td>
 		</tr>
 		<tr>
@@ -240,6 +240,21 @@
 			<td class="v-switch-subregion">Easybreeze Holiday Resort</td>
 			<td class="v-switch">0.0%-0.1%</td>
 			<td class="v-switch">0.2%-0.3%</td>
+		</tr>
+		<tr>
+			<td rowspan="3" class="region">Nod-Krai</td>
+			<td class="subregion">Paha Isle</td>
+			<td class="region">0.1%-0.2%</td>
+			<td class="region">0.3%-0.4%</td>
+		<tr>
+			<td>Lempo Isl</td>
+			<td class="percentages">0.0%-0.1%</td>
+			<td class="percentages">0.2%-0.3%</td>
+		</tr>
+		<tr>
+			<td>Hiisi Island</td>
+			<td class="percentages">0.1%-0.2%</td>
+			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 	</tbody>
 </table>
