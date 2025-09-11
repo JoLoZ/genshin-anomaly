@@ -246,6 +246,7 @@
 			<td class="subregion">Paha Isle</td>
 			<td class="region">0.1%-0.2%</td>
 			<td class="region">0.3%-0.4%</td>
+		</tr>
 		<tr>
 			<td>Lempo Isl</td>
 			<td class="percentages">0.0%-0.1%</td>
