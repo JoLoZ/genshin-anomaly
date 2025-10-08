@@ -1,7 +1,11 @@
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
+</script>
+
 <div class="wrapper">
-	<h1>Battle Chronicle unavailable</h1>
-	<p>It appears that the user requested doesn't have their Battle Chronicle publicly available.</p>
-	<a href="/stats/launcher#0" role="button">Try another UID</a>
+	<h1>{$_('stats_unavailable_title')}</h1>
+	<p>{$_('stats_unavailable_desc')}</p>
+	<a href="/stats/launcher#0" role="button">{$_('try_another_uid')}</a>
 </div>
 
 <style>

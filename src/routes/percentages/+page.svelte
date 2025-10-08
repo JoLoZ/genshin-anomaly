@@ -1,259 +1,263 @@
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
+</script>
+
 <table>
 	<thead>
 		<tr>
-			<th>Region</th>
-			<th>Location <br /> %-chan can be off due to rounding</th>
-			<th class="percentages">Mora</th>
-			<th class="percentages">Chest</th>
+			<th>{$_('region')}</th>
+			<th>{$_('location')}<br />{$_('percentchan')}</th>
+			<th class="percentages">{$_('mora')}</th>
+			<th class="percentages">{$_('chest')}</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowspan="4" class="region">Mondstadt</td>
-			<td class="subregion">Starfell Valley</td>
+			<td rowspan="4" class="region">{$_('Mondstadt')}</td>
+			<td class="subregion">{$_('Starfell Valley')}</td>
 			<td class="region">--</td>
 			<td class="region">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Galesong Hill</td>
+			<td>{$_('Galesong Hill')}</td>
 			<td class="percentages">--</td>
 			<td class="percentages">0.6%-0.7%</td>
 		</tr>
 		<tr>
-			<td>Windwail Highland</td>
+			<td>{$_('Windwail Highland')}</td>
 			<td class="percentages">--</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td>Brightcrown Mountains</td>
+			<td>{$_('Brightcrown Mountains')}</td>
 			<td class="percentages">--</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td rowspan="5" class="region">Liyue</td>
-			<td class="subregion">Bishui Plain</td>
+			<td rowspan="5" class="region">{$_('Liyue')}</td>
+			<td class="subregion">{$_('Bishui Plain')}</td>
 			<td class="region">0.2%-0.3%</td>
 			<td class="region">0.2%-0.3%</td>
 		</tr>
 		<tr>
-			<td>Minlin</td>
+			<td>{$_('Minlin')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.1%-0.2%</td>
 		</tr>
 		<tr>
-			<td>Sea of Clouds</td>
+			<td>{$_('Sea of Clouds')}</td>
 			<td class="percentages">0.3%-0.4%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Lisha</td>
+			<td>{$_('Lisha')}</td>
 			<td class="percentages">--</td>
 			<td class="percentages">0.5%-0.6%</td>
 		</tr>
 		<tr>
-			<td>Qiongji Estuary</td>
+			<td>{$_('Qiongji Estuary')}</td>
 			<td class="percentages">0.3%-0.4%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td rowspan="6" class="region">Inazuma</td>
-			<td class="subregion">Narukami Island</td>
+			<td rowspan="6" class="region">{$_('Inazuma')}</td>
+			<td class="subregion">{$_('Narukami Island')}</td>
 			<td class="region">0.3%-0.4%</td>
 			<td class="region">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Kannazuka</td>
+			<td>{$_('Kannazuka')}</td>
 			<td class="percentages">0.4%-0.5%</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td>Yashiori Island</td>
+			<td>{$_('Yashiori Island')}</td>
 			<td class="percentages">0.5%-0.6%</td>
 			<td class="percentages">0.5%-0.6%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Seirai Island</td>
+			<td class="v-switch-subregion">{$_('Seirai Island')}</td>
 			<td class="v-switch">0.3%-0.4%</td>
 			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Watatsumi Island</td>
+			<td class="v-switch-subregion">{$_('Watatsumi Island')}</td>
 			<td class="v-switch">0.5%-0.6%</td>
 			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
-			<td>Tsurumi Island</td>
+			<td>{$_('Tsurumi Island')}</td>
 			<td class="percentages">0.3%-0.4%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td rowspan="13" class="region">Sumeru</td>
-			<td class="subregion">Lokapala Jungle </td>
+			<td rowspan="13" class="region">{$_('Sumeru')}</td>
+			<td class="subregion">{$_('Lokapala Jungle')}</td>
 			<td class="region">0.2%-0.3%</td>
 			<td class="region">0.6%-0.7%</td>
 		</tr>
 		<tr>
-			<td>Ardravi Valley</td>
+			<td>{$_('Ardravi Valley')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td>Vissudha Field</td>
+			<td>{$_('Vissudha Field')}</td>
 			<td class="percentages">0.2%-0.3%</td>
 			<td class="percentages">0.7%-0.8%</td>
 		</tr>
 		<tr>
-			<td>Ashavan Realm </td>
+			<td>{$_('Ashavan Realm')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Avidya Forest </td>
+			<td>{$_('Avidya Forest')}</td>
 			<td class="percentages">0.2%-0.3%</td>
 			<td class="percentages">0.6%-0.7%</td>
 		</tr>
 		<tr>
-			<td>Lost Nursery</td>
+			<td>{$_('Lost Nursery')}</td>
 			<td class="percentages">1.6%-1.7%</td>
 			<td class="percentages">4.0%-4.1%</td>
 		</tr>
 		<tr>
-			<td>Vanarana</td>
+			<td>{$_('Vanarana')}</td>
 			<td class="percentages">1.2%-1.3%</td>
 			<td class="percentages">3.0%-3.1%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Land of Lower Setekh</td>
+			<td class="v-switch-subregion">{$_('Land of Lower Setekh')}</td>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Hypostyle Desert</td>
+			<td class="v-switch-subregion">{$_('Hypostyle Desert')}</td>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Land of Upper Setekh</td>
+			<td class="v-switch-subregion">{$_('Land of Upper Setekh')}</td>
 			<td class="v-switch">0.3%-0.4%</td>
 			<td class="v-switch">0.8%-0.9%</td>
 		</tr>
 		<tr>
-			<td>Desert of Hadramaveth</td>
+			<td>{$_('Desert of Hadramaveth')}</td>
 			<td class="percentages">0.0%-0.1%</td>
 			<td class="percentages">0.1%-0.2%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Gavireh Lajavard</td>
+			<td class="v-switch-subregion">{$_('Gavireh Lajavard')}</td>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Realm of Farakhkert</td>
+			<td class="v-switch-subregion">{$_('Realm of Farakhkert')}</td>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td rowspan="8" class="region">Fontaine</td>
-			<td class="subregion">Bellau Region</td>
+			<td rowspan="8" class="region">{$_('Fontaine')}</td>
+			<td class="subregion">{$_('Belleau Region')}</td>
 			<td class="region">0.4%-0.5%</td>
 			<td class="region">1.0%-1.1%</td>
 		</tr>
 		<tr>
-			<td>Beryl Region</td>
+			<td>{$_('Beryl Region')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Court of Fontaine</td>
+			<td>{$_('Court of Fontaine')}</td>
 			<td class="percentages">0.1%</td>
 			<td class="percentages">0.2%-0.3%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Liffey Region</td>
+			<td class="v-switch-subregion">{$_('Liffey Region')}</td>
 			<td class="v-switch">0.2%-0.3%</td>
 			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
 			<td class="v-switch-subregion"
-				>Fontaine Research Institute of Kinetic Energy Engineering Region</td
+				>{$_('Fontaine Research Institute of Kinetic Energy Engineering Region')}</td
 			>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Erynnes Forest</td>
+			<td>{$_('Erinnyes Forest')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Morte Region</td>
+			<td>{$_('Morte Region')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Nostoi Region</td>
+			<td class="v-switch-subregion">{$_('Nostoi Region')}</td>
 			<td class="v-switch">0.4%-0.5%</td>
 			<td class="v-switch">1.2%-1.3%</td>
 		</tr>
 		<tr>
-			<td rowspan="9" class="region">Natlan</td>
-			<td class="subregion">Tequemecan Valley</td>
+			<td rowspan="9" class="region">{$_('Natlan')}</td>
+			<td class="subregion">{$_('Tequemecan Valley')}</td>
 			<td class="region">0.1%-0.2%</td>
 			<td class="region">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Basin of Unnumbered Flames </td>
+			<td>{$_('Basin of Unnumbered Flames')}</td>
 			<td class="percentages">0.2%-0.3%</td>
 			<td class="percentages">0.5%-0.6%</td>
 		</tr>
 		<tr>
-			<td>Toyac Springs</td>
+			<td>{$_('Toyac Springs')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.4%-0.5%</td>
 		</tr>
 		<tr>
-			<td>Coatepec Mountain</td>
+			<td>{$_('Coatepec Mountain')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Tezcatepetonco Range</td>
+			<td class="v-switch-subregion">{$_('Tezcatepetonco Range')}</td>
 			<td class="v-switch">0.2%-0.3%</td>
 			<td class="v-switch">0.5%-0.6%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Ochkanatlan</td>
+			<td class="v-switch-subregion">{$_('Ochkanatlan')}</td>
 			<td class="v-switch">0.1%-0.2%</td>
 			<td class="v-switch">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Quahuacan Cliff</td>
+			<td class="v-switch-subregion">{$_('Quahuacan Cliff')}</td>
 			<td class="v-switch">0.3%-0.4%</td>
 			<td class="v-switch">0.9%-1.0%</td>
 		</tr>
 		<tr>
-			<td>Atocpan</td>
+			<td>{$_('Atocpan')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td class="v-switch-subregion">Easybreeze Holiday Resort</td>
+			<td class="v-switch-subregion">{$_('Easybreeze Holiday Resort')}</td>
 			<td class="v-switch">0.0%-0.1%</td>
 			<td class="v-switch">0.2%-0.3%</td>
 		</tr>
 		<tr>
-			<td rowspan="3" class="region">Nod-Krai</td>
-			<td class="subregion">Paha Isle</td>
+			<td rowspan="3" class="region">{$_('Nod-Krai')}</td>
+			<td class="subregion">{$_('Paha Isle')}</td>
 			<td class="region">0.1%-0.2%</td>
 			<td class="region">0.3%-0.4%</td>
 		</tr>
 		<tr>
-			<td>Lempo Isl</td>
+			<td>{$_('Lempo Isle')}</td>
 			<td class="percentages">0.0%-0.1%</td>
 			<td class="percentages">0.2%-0.3%</td>
 		</tr>
 		<tr>
-			<td>Hiisi Island</td>
+			<td>{$_('Hiisi Island')}</td>
 			<td class="percentages">0.1%-0.2%</td>
 			<td class="percentages">0.3%-0.4%</td>
 		</tr>

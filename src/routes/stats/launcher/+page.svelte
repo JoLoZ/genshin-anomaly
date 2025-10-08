@@ -3,6 +3,7 @@
 	import { page } from '$app/state';
 	import Modal from '$lib/components/Modal.svelte';
 	import { onMount } from 'svelte';
+	import { _ } from 'svelte-i18n';
 
 	let uid = $state('');
 	let modalOpen = $state(false);
@@ -49,31 +50,29 @@
 
 <Modal bind:open={outdatedBookmark}>
 	<header>
-		<strong>Outdated Bookmark</strong>
+		<strong>{$_('modal_outdated_title')}</strong>
 	</header>
-	<p>We've released a new version of the bookmark script that features improved stability.</p>
-	<p>
-		Please update your bookmark by removing it and adding the current version from our homepage.
-	</p>
+	<p>{$_('modal_outdated_desc_1')}</p>
+	<p>{$_('modal_outdated_desc_2')}</p>
 	<footer>
-		<a href="/" role="button"> Continue </a>
+		<a href="/" role="button">{$_('modal_continue')}</a>
 	</footer>
 </Modal>
 
 <Modal bind:open={modalOpen}>
-	<p>Once the page has loaded, click on the bookmark again to continue.</p>
+	<p>{$_('modal_launcher_loading')}</p>
 	<footer>
-		<button class="secondary" onclick={() => (modalOpen = false)}>Cancel</button>
+		<button class="secondary" onclick={() => (modalOpen = false)}>{$_('modal_launcher_cancel')}</button>
 
-		<a href={link} role="button"> I understand </a>
+		<a href={link} role="button">{$_('modal_launcher_understand')}</a>
 	</footer>
 </Modal>
 
 <div class="wrapper">
 	<div class="grid">
 		<article>
-			<h2>Your own Exploration Stats</h2>
-			<p>You have to be logged into Hoyolab</p>
+			<h2>{$_('modal_launcher_title_own')}</h2>
+			<p>{$_('modal_launcher_desc_own')}</p>
 
 			<button
 				onclick={() => {
@@ -81,12 +80,12 @@
 					modalOpen = true;
 				}}
 			>
-				Check your own
+				{$_('modal_launcher_check_own')}
 			</button>
 		</article>
 		<article>
-			<h2>Someone elses Exploration Stats</h2>
-			<p>Only works if the account have public battle chronicle displayed</p>
+			<h2>{$_('modal_launcher_title_other')}</h2>
+			<p>{$_('modal_launcher_desc_other')}</p>
 			<form
 				onsubmit={(e) => {
 					e.preventDefault();
@@ -100,12 +99,12 @@
 				<fieldset role="group">
 					<input
 						type="text"
-						placeholder="Genshin UID"
+						placeholder={$_('modal_launcher_placeholder_uid')}
 						required
 						bind:value={uid}
 						aria-invalid={uidInvalid}
 					/>
-					<input type="submit" value="Check" />
+					<input type="submit" value={$_('modal_launcher_check_other')} />
 				</fieldset>
 			</form>
 		</article>

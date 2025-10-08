@@ -7,6 +7,7 @@
 
 	import { mdiInformation } from '@mdi/js';
 	import { onMount } from 'svelte';
+	import { _ } from 'svelte-i18n';
 
 	interface Loc {
 		name: string;
@@ -66,11 +67,13 @@
 	<Modal bind:open={notesOpen}>
 		<header>
 			<p>
-				<strong>Notes on {notesName}</strong>
+				<strong>
+					{$_('modal_notes_title', { values: { area: $_(notesName) } })}
+				</strong>
 			</p>
 		</header>
 		{#if !notesLoc.notes}
-			<i>There are no notes for this area</i>
+			<i>{$_('modal_notes_none')}</i>
 		{:else}
 			<ul>
 				{#each Object.entries(notesLoc.notes) as [id, note]}
@@ -82,52 +85,52 @@
 		{/if}
 
 		<footer>
-			<button onclick={() => (notesOpen = false)}>Close</button>
+			<button onclick={() => (notesOpen = false)}>{$_('modal_notes_close')}</button>
 		</footer>
 	</Modal>
 {/if}
 
 <div class="grid">
 	<article>
-		<h3>Customize</h3>
-		<p>I've participated in these events:</p>
+		<h3>{$_('customize')}</h3>
+		<p>{$_('participated_events')}</p>
 		<label>
 			<input type="checkbox" bind:checked={opts.v1_3_laternRite} />
-			1.3 Lantern Rite Event
+			{$_('v1_3_laternRite')}
 		</label>
 		<label>
 			<input type="checkbox" bind:checked={opts.v1_6_goldenApple} />
-			1.6 Golden Apple Archipelago Event
+			{$_('v1_6_goldenApple')}
 		</label>
 		<label>
 			<input type="checkbox" bind:checked={opts.v2_0_lostRiches} />
-			2.0 Lost Riches Event
+			{$_('v2_0_lostRiches')}
 		</label>
 		<label>
 			<input type="checkbox" bind:checked={opts.v2_2_shadow} />
-			2.2 Shadow of the Ancients Event
+			{$_('v2_2_shadow')}
 		</label>
-		<h3>Settings</h3>
+		<h3>{$_('settings')}</h3>
 		<label>
 			<input type="checkbox" bind:checked={opts.show_changes} />
-			Show Mora and Chest changes
+			{$_('show_changes')}
 		</label>
 		<label>
 			<input type="checkbox" bind:checked={opts.hide_finished} />
-			Hide finished Subregions
+			{$_('hide_finished')}
 		</label>
 	</article>
 
 	<table>
 		<thead>
 			<tr>
-				<th>Location</th>
-				<th>Progress</th>
-				<th>Max</th>
-				<th>Progressbar</th>
+				<th>{$_('location')}</th>
+				<th>{$_('progress')}</th>
+				<th>{$_('max')}</th>
+				<th>{$_('progressbar')}</th>
 				{#if opts.show_changes}
-					<th class="change">Mora%</th>
-					<th class="change">Chest%</th>
+					<th class="change">{$_('mora')}%</th>
+					<th class="change">{$_('chest')}%</th>
 				{/if}
 			</tr>
 		</thead>
@@ -141,7 +144,7 @@
 					{#if newRegion}
 					<tr class="region">
 						<td colspan="6">
-							<strong>{info.region}</strong>
+							<strong>{$_(info.region)}</strong>
 						</td>
 					</tr>
 					{/if}
@@ -149,15 +152,15 @@
 					<tr>
 							<td>
 								<span>
-									{loc.name}
+									{$_(loc.name)}
 
 									{#if noteCount > 0}
 										<button
 											role="link"
 											class="warnings"
-											data-tooltip="There {noteCount == 1
-												? 'is'
-												: 'are'} {noteCount} note{noteCount == 1 ? '' : 's'} about this area"
+											data-tooltip={$_('area_notes_tooltip', { values: {
+												count: noteCount
+											} })}
 											onclick={() => {
 												notesOpen = true;
 												notesName = loc.name;
@@ -174,7 +177,7 @@
 								<span
 									class:rainbow={loc.value > max}
 									data-tooltip={loc.value > max
-										? 'This percentage is above the currently known maximum'
+										? $_('exceeds_max_tooltip')
 										: undefined}
 								>
 									{loc.value.toFixed(1)}%
@@ -199,7 +202,7 @@
 			{:else}
 				<tr>
 					<td colspan={4}>
-						<h1 aria-busy="true">Crunching numbers...</h1>
+						<h1 aria-busy="true">{$_('modal_loading')}</h1>
 					</td>
 				</tr>
 			{/each}
