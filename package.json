@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"@picocss/pico": "^2.1.1",
-		"@sveltejs/adapter-static": "^3.0.8"
+		"@sveltejs/adapter-static": "^3.0.8",
+		"svelte-i18n": "^4.0.1"
 	}
 }
