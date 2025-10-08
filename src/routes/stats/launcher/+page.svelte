@@ -14,14 +14,13 @@
 			let server = '';
 
 			const serverMap: Record<string, string> = {
-				'1': 'os_asia',
 				'6': 'os_usa',
 				'7': 'os_euro',
 				'8': 'os_asia',
 				'9': 'os_cht'
 			};
 
-			server = serverMap[uid[0]] || '_ERROR';
+			server = serverMap[uid.at(-9) || ''] || '_ERROR';
 
 			extra = `#/ys/exploration?role_id=${uid}&server=${server}`;
 		}
