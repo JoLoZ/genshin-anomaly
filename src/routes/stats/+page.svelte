@@ -125,7 +125,7 @@
 		<table class="border">
 			<thead>
 				<tr>
-					<th>{$_('location')}</th>
+					<th style="min-width: 20rem">{$_('location')}</th>
 					<th>{$_('progress')}</th>
 					<th>{$_('max')}</th>
 					<th>{$_('progressbar')}</th>
@@ -276,6 +276,7 @@
 	}
 	.name {
 		padding: var(--_padding) 0;
+		max-width: 100%;
 	}
 
 	.rainbow {
@@ -296,5 +297,4 @@
 			background-position: 400% 0;
 		}
 	}
-	
 </style>
