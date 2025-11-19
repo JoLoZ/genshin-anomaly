@@ -7,7 +7,7 @@
 
 	import { register, init, getLocaleFromNavigator, _, locale, locales } from 'svelte-i18n';
 	import Icon from '$lib/components/Icon.svelte';
-	import {  mdiClose, mdiMenuDown } from '@mdi/js';
+	import { mdiClose, mdiMenuDown, mdiWeatherNight, mdiWeatherSunny } from '@mdi/js';
 	import { onMount } from 'svelte';
 
 	const languageNames: Record<string, string> = {
@@ -50,12 +50,28 @@
 
 	let { children } = $props();
 
+	let darkmode = $state(true);
+
 	let announcementActive = $state(false);
 
 	onMount(() => {
 		if (localStorage.getItem('lastAnnouncement') != 'designFeedback') {
 			announcementActive = true;
 		}
+
+		if (localStorage.getItem('darkmode') === 'false') {
+			darkmode = false;
+		}
+
+		$effect(() => {
+			if (darkmode) {
+				document.body.classList.add('dark');
+				localStorage.setItem('darkmode', 'true');
+			} else {
+				document.body.classList.remove('dark');
+				localStorage.setItem('darkmode', 'false');
+			}
+		});
 	});
 
 	function hideAnnouncement() {
@@ -80,6 +96,15 @@
 	<header>
 		<nav>
 			<h6 class="max"><a href="/">Genshin Anomaly</a></h6>
+
+			<label class="checkbox icon">
+				<input type="checkbox" bind:checked={darkmode} />
+				<span>
+					<Icon d={mdiWeatherSunny}></Icon>
+					<Icon d={mdiWeatherNight}></Icon>
+				</span>
+			</label>
+
 			<div class="field suffix border small">
 				<select bind:value={$locale}>
 					{#each $locales as l}
