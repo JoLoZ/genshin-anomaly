@@ -48,29 +48,30 @@
 </script>
 
 <Modal bind:open={outdatedBookmark}>
-	<header>
-		<strong>{$_('modal_outdated_title')}</strong>
-	</header>
+	<strong>{$_('modal_outdated_title')}</strong>
 	<p>{$_('modal_outdated_desc_1')}</p>
 	<p>{$_('modal_outdated_desc_2')}</p>
+
 	<footer>
-		<a href="/" role="button">{$_('modal_continue')}</a>
+		<a href="/" class="button">{$_('modal_continue')}</a>
 	</footer>
 </Modal>
 
 <Modal bind:open={modalOpen}>
 	<p>{$_('modal_launcher_loading')}</p>
-	<footer>
-		<button class="secondary" onclick={() => (modalOpen = false)}>{$_('modal_launcher_cancel')}</button>
+	<nav class="right-align">
+		<button class="secondary" onclick={() => (modalOpen = false)}
+			>{$_('modal_launcher_cancel')}</button
+		>
 
-		<a href={link} role="button">{$_('modal_launcher_understand')}</a>
-	</footer>
+		<a href={link} class="button">{$_('modal_launcher_understand')}</a>
+	</nav>
 </Modal>
 
 <div class="wrapper">
 	<div class="grid">
 		<article>
-			<h2>{$_('modal_launcher_title_own')}</h2>
+			<h4>{$_('modal_launcher_title_own')}</h4>
 			<p>{$_('modal_launcher_desc_own')}</p>
 
 			<button
@@ -83,7 +84,7 @@
 			</button>
 		</article>
 		<article>
-			<h2>{$_('modal_launcher_title_other')}</h2>
+			<h4>{$_('modal_launcher_title_other')}</h4>
 			<p>{$_('modal_launcher_desc_other')}</p>
 			<form
 				onsubmit={(e) => {
@@ -94,17 +95,13 @@
 					modalOpen = true;
 				}}
 			>
-				<!-- svelte-ignore a11y_no_redundant_roles -->
-				<fieldset role="group">
-					<input
-						type="text"
-						placeholder={$_('modal_launcher_placeholder_uid')}
-						required
-						bind:value={uid}
-						aria-invalid={uidInvalid}
-					/>
-					<input type="submit" value={$_('modal_launcher_check_other')} />
-				</fieldset>
+				<nav>
+					<div class="field label border max" class:invalid={uidInvalid}>
+						<input type="text" id="other-uid" bind:value={uid} required />
+						<label for="#other-uid">{$_('modal_launcher_placeholder_uid')}</label>
+					</div>
+					<button type="submit">{$_('modal_launcher_check_other')}</button>
+				</nav>
 			</form>
 		</article>
 	</div>
@@ -119,5 +116,9 @@
 	}
 	.grid {
 		width: 100%;
+		grid-template-columns: 1fr 1fr;
+	}
+	form {
+		margin-block-start: 0 !important;
 	}
 </style>

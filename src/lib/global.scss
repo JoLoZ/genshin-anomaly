@@ -1,13 +1,89 @@
-@use '@picocss/pico/scss/pico' with (
-	$theme-color: 'azure'
-);
-
 body {
-	--full-height: calc(100vh - var(--pico-nav-element-spacing-vertical) * 4 - 2.9em);
+	--full-height: calc(100vh - 10rem);
+
+	--primary: #0061a4;
+	--on-primary: #ffffff;
+	--primary-container: #d1e4ff;
+	--on-primary-container: #001d36;
+	--secondary: #535f70;
+	--on-secondary: #ffffff;
+	--secondary-container: #d7e3f7;
+	--on-secondary-container: #101c2b;
+	--tertiary: #6b5778;
+	--on-tertiary: #ffffff;
+	--tertiary-container: #f2daff;
+	--on-tertiary-container: #251431;
+	--error: #ba1a1a;
+	--on-error: #ffffff;
+	--error-container: #ffdad6;
+	--on-error-container: #410002;
+	--background: #fdfcff;
+	--on-background: #1a1c1e;
+	--surface: #faf9fc;
+	--on-surface: #1a1c1e;
+	--surface-variant: #dfe2eb;
+	--on-surface-variant: #43474e;
+	--outline: #73777f;
+	--outline-variant: #c3c7cf;
+	--shadow: #000000;
+	--scrim: #000000;
+	--inverse-surface: #2f3033;
+	--inverse-on-surface: #f1f0f4;
+	--inverse-primary: #9ecaff;
+	--surface-dim: #dadadd;
+	--surface-bright: #faf9fc;
+	--surface-container-lowest: #ffffff;
+	--surface-container-low: #f4f3f7;
+	--surface-container: #eeedf1;
+	--surface-container-high: #e8e8eb;
+	--surface-container-highest: #e2e2e6;
+
+	&.dark {
+		--primary: #9ecaff;
+		--on-primary: #003258;
+		--primary-container: #00497d;
+		--on-primary-container: #d1e4ff;
+		--secondary: #bbc7db;
+		--on-secondary: #253140;
+		--secondary-container: #3b4858;
+		--on-secondary-container: #d7e3f7;
+		--tertiary: #d6bee4;
+		--on-tertiary: #3b2948;
+		--tertiary-container: #523f5f;
+		--on-tertiary-container: #f2daff;
+		--error: #ffb4ab;
+		--on-error: #690005;
+		--error-container: #93000a;
+		--on-error-container: #ffb4ab;
+		--background: #1a1c1e;
+		--on-background: #e2e2e6;
+		--surface: #121316;
+		--on-surface: #e2e2e6;
+		--surface-variant: #43474e;
+		--on-surface-variant: #c3c7cf;
+		--outline: #8d9199;
+		--outline-variant: #43474e;
+		--shadow: #000000;
+		--scrim: #000000;
+		--inverse-surface: #e2e2e6;
+		--inverse-on-surface: #2f3033;
+		--inverse-primary: #0061a4;
+		--surface-dim: #121316;
+		--surface-bright: #38393c;
+		--surface-container-lowest: #0d0e11;
+		--surface-container-low: #1a1c1e;
+		--surface-container: #1e2022;
+		--surface-container-high: #282a2d;
+		--surface-container-highest: #333538;
+	}
 }
 
-.success {
-	--pico-progress-color: #a5d601;
+body,
+table,
+label,
+.tooltip,
+.tooltip.max {
+	font-size: 1rem;
 }
 
 @keyframes rainbow_animation {

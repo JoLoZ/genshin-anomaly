@@ -5,7 +5,7 @@
 <div class="wrapper">
 	<h1>{$_('stats_unavailable_title')}</h1>
 	<p>{$_('stats_unavailable_desc')}</p>
-	<a href="/stats/launcher#0" role="button">{$_('try_another_uid')}</a>
+	<a href="/stats/launcher#0" class="button">{$_('try_another_uid')}</a>
 </div>
 
 <style>

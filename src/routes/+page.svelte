@@ -13,7 +13,7 @@
 	}
 </script>
 
-<header>
+<div class="header">
 	<div class:shake>
 		<h1>{$_('main_heading')}</h1>
 
@@ -22,13 +22,14 @@
 		<a
 			draggable
 			href={`javascript:${data.bookmark.replaceAll('%ORIGIN%', page.url.origin)}`}
+			class="link"
 			onclick={handleBookmarkClick}>Genshin Anomaly</a
 		>
 	</div>
-</header>
+</div>
 
 <style>
-	header {
+	.header {
 		min-height: var(--full-height);
 		display: flex;
 		align-items: center;

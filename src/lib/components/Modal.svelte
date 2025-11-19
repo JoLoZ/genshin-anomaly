@@ -1,9 +1,14 @@
 <script lang="ts">
 	import { onMount, type Snippet } from 'svelte';
+	import type { HTMLDialogAttributes } from 'svelte/elements';
 
 	let el: HTMLDialogElement;
 
-	let { open = $bindable(false), children }: { open: boolean; children: Snippet } = $props();
+	let {
+		open = $bindable(false),
+		children,
+		...rest
+	}: { open: boolean; children: Snippet } & HTMLDialogAttributes = $props();
 
 	onMount(() => {
 		$effect(() => {
@@ -18,8 +23,7 @@
 	});
 </script>
 
-<dialog bind:this={el}>
-	<article>
-		{@render children()}
-	</article>
+<div class="overlay" class:active={open}></div>
+<dialog bind:this={el} {...rest}>
+	{@render children()}
 </dialog>

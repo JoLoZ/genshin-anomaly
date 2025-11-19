@@ -45,5 +45,9 @@
 	"exceeds_max_tooltip": "This percentage is above the currently known maximum",
 	"stats_unavailable_title": "Battle Chronicle unavailable",
 	"stats_unavailable_desc": "It appears that the user requested doesn't have their Battle Chronicle publicly available.",
-	"try_another_uid": "Try another UID"
+	"try_another_uid": "Try another UID",
+
+	"announcement_designFeedback_text": "We've recently updated Genshin Anomaly with a new design.",
+	"announcement_designFeedback_link": "Give feedback",
+	"announcement_designFeedback_footer": "Give design feedback"
 }
