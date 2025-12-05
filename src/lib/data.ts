@@ -369,7 +369,7 @@ export const data: Record<string, DataPoint> = {
 		chestChanges: '0.2%-0.3%'
 	},
 	'Paha Isle': {
-		max: 108.5,
+		max: 110.2,
 		region: 'Nod-Krai',
 		moraChanges: '0.1%-0.2%',
 		chestChanges: '0.3%-0.4%'
