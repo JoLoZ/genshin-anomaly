@@ -389,20 +389,20 @@ export const data: Record<string, DataPoint> = {
 	'Voidsea Outlook': {
 		max: 110.3,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.2-0.3',
+		chestChanges: '0.4-0.5'
 	},
 	'Wavechaser Plain': {
 		max: 108.9,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.1-0.2',
+		chestChanges: '0.3-0.4'
 	},
 	'Ashveil Peak': {
 		max: 113.4,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.2-0.3',
+		chestChanges: '0.6-0.7'
 	}
 };
 
