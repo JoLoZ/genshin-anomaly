@@ -33,9 +33,9 @@ export const data: Record<string, DataPoint> = {
 	'Brightcrown Mountains': {
 		max: (opts) => {
 			if (opts.v2_2_shadow) {
-				return 106.6;
+				return 109.0;
 			}
-			return 106.1;
+			return 108.5;
 		},
 		notes: {
 			default: 'Due to early Version bugs and bug fixes, Mondstadt numbers can be off',
