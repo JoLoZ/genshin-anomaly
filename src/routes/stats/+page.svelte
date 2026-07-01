@@ -149,7 +149,7 @@
 								</td>
 							</tr>
 						{/if}
-						{#if !opts.hide_finished || max > loc.value}
+						{#if !opts.hide_finished || max > loc.value || max == 0}
 							<tr>
 								<td>
 									<span>
