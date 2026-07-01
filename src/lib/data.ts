@@ -403,6 +403,30 @@ export const data: Record<string, DataPoint> = {
 		region: 'Nod-Krai',
 		moraChanges: '0.2%-0.3%',
 		chestChanges: '0.6%-0.7%'
+	},
+	'Dunanna Pit': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: '-',
+		chestChanges: '-'
+	},
+	'Lunar Highlands': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: '-',
+		chestChanges: '-'
+	},
+	'Moontide Sea': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: '-',
+		chestChanges: '-'
+	},
+	'Dark Side of the Moon': {
+		max: 0,
+		region: 'Nod-Krai',
+		moraChanges: '-',
+		chestChanges: '-'
 	}
 };
 
