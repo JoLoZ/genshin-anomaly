@@ -277,7 +277,7 @@ export const data: Record<string, DataPoint> = {
 	'Court of Fontaine': {
 		max: 110.2,
 		region: 'Fontaine',
-		moraChanges: '<0.1%',
+		moraChanges: '0.0%-0.1%',
 		chestChanges: '0.2%-0.3%'
 	},
 	'Liffey Region': {
@@ -407,14 +407,14 @@ export const data: Record<string, DataPoint> = {
 	'Dunanna Pit': {
 		max: 107.1,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.8%-0.9%',
+		chestChanges: '2.2%-2.3%'
 	},
 	'Lunar Highlands': {
 		max: 108.4,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.0%-0.1%',
+		chestChanges: '0.2%-0.3%'
 	},
 	'Moontide Sea': {
 		max: 118.3,
@@ -431,26 +431,26 @@ export const data: Record<string, DataPoint> = {
 	'Volkodlak Tundra': {
 		max: 108.9,
 		region: 'Snezhnaya',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.2%-0.3%',
+		chestChanges: '0.7%-0.8%'
 	},
 	'Everfrozen Earth': {
 		max: 108.1,
 		region: 'Snezhnaya',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.0%-0.1%',
+		chestChanges: '0.2%-0.3%'
 	},
 	'Fellfrost Peak': {
 		max: 109.4,
 		region: 'Snezhnaya',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.1%-0.2%',
+		chestChanges: '0.3%-0.4%'
 	},
 	'Flamefeather Valley': {
 		max: 110.6,
 		region: 'Snezhnaya',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.2%-0.3%',
+		chestChanges: '0.7%-0.8%'
 	},
 	'White Birch Snowgrave': {
 		max: 109.3,
