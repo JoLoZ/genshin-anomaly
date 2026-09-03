@@ -419,14 +419,14 @@ export const data: Record<string, DataPoint> = {
 	'Moontide Sea': {
 		max: 118.3,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.3%-0.4%',
+		chestChanges: '0.8%-0.9%'
 	},
 	'Dark Side of the Moon': {
 		max: 109.5,
 		region: 'Nod-Krai',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.7%-0.8%',
+		chestChanges: '1.9%-2.0%'
 	},
 	'Volkodlak Tundra': {
 		max: 108.9,
