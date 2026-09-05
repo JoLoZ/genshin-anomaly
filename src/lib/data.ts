@@ -455,8 +455,8 @@ export const data: Record<string, DataPoint> = {
 	'White Birch Snowgrave': {
 		max: 109.3,
 		region: 'Snezhnaya',
-		moraChanges: '-',
-		chestChanges: '-'
+		moraChanges: '0.2%-0.3%',
+		chestChanges: '0.7%-0.8%'
 	}
 };
 
