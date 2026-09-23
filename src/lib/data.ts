@@ -441,7 +441,7 @@ export const data: Record<string, DataPoint> = {
 		chestChanges: '0.2%-0.3%'
 	},
 	'Fellfrost Peak': {
-		max: 109.4,
+		max: 110.8,
 		region: 'Snezhnaya',
 		moraChanges: '0.1%-0.2%',
 		chestChanges: '0.3%-0.4%'
