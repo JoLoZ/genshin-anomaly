@@ -457,6 +457,18 @@ export const data: Record<string, DataPoint> = {
 		region: 'Snezhnaya',
 		moraChanges: '0.2%-0.3%',
 		chestChanges: '0.7%-0.8%'
+	},
+	'Novokitezhgrad': {
+		max: 0,
+		region: 'Snezhnaya',
+		moraChanges: '--',
+		chestChanges: '--'
+	},
+	'Wingspan Peak': {
+		max: 0,
+		region: 'Snezhnaya',
+		moraChanges: '--',
+		chestChanges: '--'
 	}
 };
 
